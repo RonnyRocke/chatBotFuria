@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Ignore .env files
+*.env
+
 furia-chat/.env # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
