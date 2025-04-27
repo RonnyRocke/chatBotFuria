@@ -1,0 +1,131 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garantir que o corpo ocupe 100% da altura da tela */
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Garantir que o app ocupe 100% da altura da tela */
+  background: url('./assets/background-cs.jpg') no-repeat center center fixed; /* <-- fundo de CS */
+  background-size: cover;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.chat {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: rgba(52, 73, 94, 0.9); /* fundo escuro com transparência */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 12px 20px;
+  border-radius: 12px;
+  max-width: 80%;
+  font-size: 16px;
+}
+
+.message.user {
+  background-color: #A7D8A0;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #BDC3C7;
+  align-self: flex-start;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #28A745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+input:focus, button:focus {
+  outline: none;
+  border: 2px solid #28A745;
+}
+
+.highlighted-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.highlighted-question {
+  background-color: #ffffff;
+  border: 2px solid #28A745;
+  border-radius: 8px;
+  color: #333;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.highlighted-question:hover {
+  background-color: #28A745;
+  color: white;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+.highlighted-question:focus {
+  outline: none;
+}
